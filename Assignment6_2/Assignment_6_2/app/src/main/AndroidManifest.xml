@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.assignment_6_2" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.assignment_6_2.appConfig.util.App">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <service
+            android:name=".services.serviceImplementation.CashServiceImplem"
+            android:enabled="true"
+            android:exported="false"/>
+        <service android:name=".services.serviceImplementation.ChequeServiceImplem"
+            android:enabled="true"
+            android:exported="false"/>
+        <service android:name=".services.serviceImplementation.CreditServiceImplem"
+            android:enabled="true"
+            android:exported="false"/>
+        <service android:name=".services.serviceImplementation.FuneralServiceImplem"
+            android:enabled="true"
+            android:exported="false"/>
+        <service android:name=".services.serviceImplementation.GraduationCeremonyServiceImplem"
+            android:enabled="true"
+            android:exported="false"/>
+        <service android:name=".services.serviceImplementation.PhotoEditorServiceImplem"
+            android:enabled="true"
+            android:exported="false"/>
+    </application>
+
+</manifest>
